@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="cssFile.css">
+</head>
+
+<body>
+
+    <div id="calculator">
+
+        <h2>Simple Calculator</h2>
+
+        <input type="text" id="display" oninput="handleInput()" placeholder="Click here to type" autofocus>
+
+        <div class="row">
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('.')">.</button>
+
+        </div>
+
+        <div class="row">
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('%')">%</button>
+
+        </div>
+
+        <div class="row">
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">x</button>
+            <button onclick="appendToDisplay('/')">/</button>
+        </div>
+
+        <div class="row">
+            <button onclick="appendToDisplay('0')" class="big-button">0</button>
+            <button onclick="clearDisplay()" class="big-button">C</button>
+            <button onclick="calculateResult()" class="big-button">=</button>
+        </div>
+
+        <div class="row">
+            <img src="softuni-wizard.png" alt="Description of your image">
+        </div>
+
+        <script src="jsFile.js"></script>
+
+    </div>
+
+</body>
+
+</html>

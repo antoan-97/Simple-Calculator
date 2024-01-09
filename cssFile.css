@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('1686655416_en-idei-club-p-math-background-dizain-krasivo-1.jpg');
+    background-size: cover;
+}
+
+#calculator {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+input {
+    width: 40%;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial, sans-serif;color: azure;
+    font-size: 2em;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 17%;
+    padding: 10px;
+}
+
+.big-button {
+    width: 28.5%;
+}
