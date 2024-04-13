@@ -21,35 +21,35 @@
         <input type="text" id="display" oninput="handleInput()" placeholder="Click here to type" autofocus>
 
         <div class="row">
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('.')">.</button>
+            <button ontouchstart="appendToDisplay('1')" onclick="appendToDisplay('1')">1</button>
+            <button ontouchstart="appendToDisplay('2')" onclick="appendToDisplay('2')">2</button>
+            <button ontouchstart="appendToDisplay('3')" onclick="appendToDisplay('3')">3</button>
+            <button ontouchstart="appendToDisplay('+')" onclick="appendToDisplay('+')">+</button>
+            <button ontouchstart="appendToDisplay('.')" onclick="appendToDisplay('.')">.</button>
 
         </div>
 
         <div class="row">
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('%')">%</button>
+            <button ontouchstart="appendToDisplay('4')" onclick="appendToDisplay('4')">4</button>
+            <button ontouchstart="appendToDisplay('5')" onclick="appendToDisplay('5')">5</button>
+            <button ontouchstart="appendToDisplay('6')" onclick="appendToDisplay('6')">6</button>
+            <button ontouchstart="appendToDisplay('-')" onclick="appendToDisplay('-')">-</button>
+            <button ontouchstart="appendToDisplay('%')" onclick="appendToDisplay('%')">%</button>
 
         </div>
 
         <div class="row">
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('*')">x</button>
-            <button onclick="appendToDisplay('/')">/</button>
+            <button ontouchstart="appendToDisplay('7')" onclick="appendToDisplay('7')">7</button>
+            <button ontouchstart="appendToDisplay('8')" onclick="appendToDisplay('8')">8</button>
+            <button ontouchstart="appendToDisplay('9')" onclick="appendToDisplay('9')">9</button>
+            <button ontouchstart="appendToDisplay('*')" onclick="appendToDisplay('*')">x</button>
+            <button ontouchstart="appendToDisplay('/')" onclick="appendToDisplay('/')">/</button>
         </div>
 
         <div class="row">
-            <button onclick="appendToDisplay('0')" class="big-button">0</button>
-            <button onclick="clearDisplay()" class="big-button">C</button>
-            <button onclick="calculateResult()" class="big-button">=</button>
+            <button ontouchstart="appendToDisplay('0')" onclick="appendToDisplay('0')" class="big-button">0</button>
+            <button ontouchstart="clearDisplay()" onclick="clearDisplay()" class="big-button">C</button>
+            <button ontouchstart="calculateResult()" onclick="calculateResult()" class="big-button">=</button>
         </div>
 
         <div class="row">
