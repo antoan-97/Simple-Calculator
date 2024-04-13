@@ -2,15 +2,14 @@ let result = document.getElementById('display').value
 
 function calculateResult() {
     try {
-        let displayValue = result;
         // Check if the display contains '%'
-        if (displayValue.includes('%')) {
+        if (result.includes('%')) {
             // Replace '%' with '/100*' and evaluate the expression
-            let expression = displayValue.replace(/%/g, '/100*');
-         result = eval(expression);
+            let expression = result.replace(/%/g, '/100*');
+            result = eval(expression);
         } else {
             // If no '%', perform regular evaluation
-            result = eval(displayValue);
+            result = eval(result);
         }
         updateDisplay();
     } catch (error) {
