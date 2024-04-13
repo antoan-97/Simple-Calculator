@@ -42,3 +42,18 @@ button {
 .big-button {
     width: 28.5%;
 }
+
+@media (max-width: 600px) {
+    input {
+        width: 90%;
+        max-width: none; /* Remove max-width for smaller screens */
+    }
+
+    button {
+        width: 30%; /* Adjust button width for smaller screens */
+    }
+
+    .big-button {
+        width: 45%; /* Adjust big-button width for smaller screens */
+    }
+}
