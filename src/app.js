@@ -1,39 +1,41 @@
-function appendToDisplay(value) {
-    document.getElementById('display').value += value;
-}
-
-function clearDisplay() {
-    document.getElementById('display').value = '';
-}
+let result = document.getElementById('display').value
 
 function calculateResult() {
     try {
-        let displayValue = document.getElementById('display').value;
+        let displayValue = result;
         // Check if the display contains '%'
         if (displayValue.includes('%')) {
             // Replace '%' with '/100*' and evaluate the expression
             let expression = displayValue.replace(/%/g, '/100*');
-            let result = eval(expression);
-            document.getElementById('display').value = result;
+         result = eval(expression);
         } else {
             // If no '%', perform regular evaluation
-            document.getElementById('display').value = eval(displayValue);
+            result = eval(displayValue);
         }
+        updateDisplay();
     } catch (error) {
-        document.getElementById('display').value = 'Error';
+        result = 'Error';
+        updateDisplay()
     }
+}
+
+function appendToDisplay(value) {
+    result += value;
+    updateDisplay();
 }
 
 
 function handleInput() {
     // Handle input as needed
-    console.log('Input detected:', document.getElementById('display').value);
+    console.log('Input detected:', result);
 }
 
-function calculateResult() {
-    try {
-        document.getElementById('display').value = eval(document.getElementById('display').value);
-    } catch (error) {
-        document.getElementById('display').value = 'Error';
-    }
+
+function updateDisplay() {
+    document.getElementById('display').value = result;
+}
+
+function clearDisplay() {
+    result = '';
+    updateDisplay();
 }
